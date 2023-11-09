@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notes_flutter/widgets/roundeb_button.dart';
+import 'package:notes_flutter/widgets/rounded_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -18,6 +18,7 @@ class WelcomeScreen extends StatelessWidget {
             const Center(
               child: Text(
                 'Notas do Flutter',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 56,
                   fontWeight: FontWeight.bold,
