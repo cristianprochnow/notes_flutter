@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "336060817639",
+    "project_id": "notas-com-flutter",
+    "storage_bucket": "notas-com-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336060817639:android:dfb31b96233e91f3d48242",
+        "android_client_info": {
+          "package_name": "com.example.notes_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7bho6yaIrHNkUHAFHHCNufKOnpGdjths"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
