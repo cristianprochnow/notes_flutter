@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:notes_flutter/widgets/roundeb_button.dart';
 
-class Welcome extends StatelessWidget {
-  const Welcome({super.key});
+class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class Welcome extends StatelessWidget {
           children: [
             const Center(
               child: Text(
-                'Notas',
+                'Notas do Flutter',
                 style: TextStyle(
                   fontSize: 56,
                   fontWeight: FontWeight.bold,
@@ -32,8 +32,15 @@ class Welcome extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/login');
               },
+              color: Colors.blue,
+            ),
+            RoundedButton(
+              title: 'Registre-se', 
+              onPressed: () {
+                Navigator.pushNamed(context, '/register');
+              },
               color: Colors.green,
-            )
+            ),
           ],
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:notes_flutter/screens/welcome.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -10,12 +11,11 @@ class App extends StatelessWidget {
       future: Firebase.initializeApp(),
       builder: ((context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
-          return const MaterialApp(
-            home: Scaffold(
-              body: Center(
-                child: Text('Hello World!'),
-              ),
-            ),
+          return MaterialApp(
+            initialRoute: '/',
+            routes: {
+              '/': (context) => const WelcomeScreen(),
+            },
           );
         }
         return const Center(
