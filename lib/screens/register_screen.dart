@@ -63,6 +63,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ),
             RoundedButton(
               title: 'Registrar-se', 
+              color: Colors.green,
               onPressed: () {
                 auth
                   .createUserWithEmailAndPassword(
@@ -71,7 +72,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   )
                   .then((value) => Navigator.pushNamed(context, '/main'));
               },
-            )
+            ),
           ],
         ),
       ),
