@@ -10,7 +10,14 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: Firebase.initializeApp(),
+      future: Firebase.initializeApp(
+        options: const FirebaseOptions(
+          apiKey: 'AIzaSyC7bho6yaIrHNkUHAFHHCNufKOnpGdjths', 
+          appId: '1:336060817639:android:dfb31b96233e91f3d48242', 
+          messagingSenderId: '1:336060817639:android:dfb31b96233e91f3d48242', 
+          projectId: 'notas-com-flutter',
+        ),
+      ),
       builder: ((context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
           return MaterialApp(
